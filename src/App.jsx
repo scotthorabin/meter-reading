@@ -18,7 +18,7 @@ function App() {
       return;
     }
 
-      // Ensure the new reading is greater than the last recorded reading
+      // new if statement that makes sure that new reading from user is higher than last
   if (newReading.length > 0 && newUserReading <= newReading[0]) {
     newError("New reading must be higher than the last recorded reading.");
     return;
